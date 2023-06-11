@@ -22,6 +22,9 @@ def html_template(template,folder):
    # raise Exception("Sorry, not allowed to hit index.html")
    print(template,folder)
    return render_template ( folder + "/"+ template+".html")
+@app.route("/")
+def index():
+     return render_template ( "index.html")
 
 
 
